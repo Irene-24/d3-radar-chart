@@ -1,0 +1,64 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.chart
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+
+.tooltip
+{
+    position: fixed;
+    transition: all;
+    background-color: coral;
+    padding: 5px;
+    border-radius: 5px;
+    opacity: 0;
+    
+}
+
+.chart svg
+{
+    border: 1px solid #000;
+}
+
+.levels path
+{
+    fill: none;
+    stroke: #000;
+}
+
+.grid-lines path
+{
+    stroke: coral;
+}
+
+.tick-lines path
+{
+    stroke: rgb(228, 16, 16);
+    stroke-width: 2px;
+}
+
+.indic
+{
+    fill: rgb(70, 219, 32);
+}
+
+.shape path
+{
+    stroke: cyan;
+    fill: rgba(238, 93, 238, 0.466);
+}
+
+.chart circle
+{
+    cursor: pointer;
+}
