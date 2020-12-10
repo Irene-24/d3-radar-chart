@@ -67,8 +67,6 @@ const wrapper = d3.select( ".chart" )
 
 const g = d3.select( "svg" ).append( "g" );
 
-const valueAccessor = d => d.value;
-
 const scale = d3.scaleLinear()
     .domain( [ 0, 100 ] )
     .range( [ 0, r_0 ] )
